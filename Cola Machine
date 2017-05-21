@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int bevSoda;
+
+    cout << "PLEASE CHOOSE BELOW: \n 1-Coca Cola \n 2-Sprite \n 3-Pepsi \n 4-7UP \n 5-Mountain Dew" << endl;
+    cin >> bevSoda;
+
+    switch (bevSoda){
+        case 1:
+            cout << "You deserved a Coca Cola!" << endl;
+            break;
+        case 2:
+            cout << "Ahhhh! Refreshing Sprite is coming!" << endl;
+            break;
+        case 3:
+            cout << "Enjoy your ice cold Pepsi cola!" << endl;
+            break;
+        case 4:
+            cout << "Up your day with 7UP!" << endl;
+            break;
+        case 5:
+            cout << "Do the Dew! Be refreshed with Mountain Dew" << endl;
+            break;
+        default:
+            cout << "ERROR: Please enter correct number.." << endl;
+
+    cout << "Enter code here:" << endl;
+    }
+    
+}
