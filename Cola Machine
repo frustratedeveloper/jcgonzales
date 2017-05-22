@@ -8,6 +8,7 @@ int main()
     int bevSoda;
 
     cout << "PLEASE CHOOSE BELOW: \n 1-Coca Cola \n 2-Sprite \n 3-Pepsi \n 4-7UP \n 5-Mountain Dew" << endl;
+    cout << "Enter your code here" << endl;
     cin >> bevSoda;
 
     switch (bevSoda){
@@ -28,8 +29,6 @@ int main()
             break;
         default:
             cout << "ERROR: Please enter correct number.." << endl;
-
-    cout << "Enter code here:" << endl;
     }
     
 }
