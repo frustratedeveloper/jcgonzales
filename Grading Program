@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int grade = 0;
+
+    cout << "Please enter your score here from (0-100): " << endl;
+    cin >> grade;
+
+    if (grade <= 59){
+        cout << "Your grade is F!";
+    }else if (grade >=60 && grade <=69){
+        cout << "Your grade is D";
+    }else if (grade >=70 && grade <=79){
+        cout << "Your grade is C";
+    }else if (grade >=80 && grade <=89){
+        cout << "Your grade is B";
+    }else if (grade >=90 && grade <=100){
+        cout << "Good Job! You got an A!";
+    }else{
+        cout << "Error, you enter an incorrect number..";
+    }
+
+    return 0;
+}
