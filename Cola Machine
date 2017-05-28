@@ -1,34 +1,46 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-int main()
-{
-    int bevSoda;
+/*
+Cola Machine
+Requires:
+variables, data types, and numerical operators
+basic input/output
+logic (if statements, switch statements)
 
-    cout << "PLEASE CHOOSE BELOW: \n 1-Coca Cola \n 2-Sprite \n 3-Pepsi \n 4-7UP \n 5-Mountain Dew" << endl;
-    cout << "Enter your code here" << endl;
-    cin >> bevSoda;
+Write a program that presents the user w/ a choice of your 5 favorite beverages (Coke, Water, Sprite, ... , Whatever).
+Then allow the user to choose a beverage by entering a number 1-5.
+Output which beverage they chose.
 
-    switch (bevSoda){
-        case 1:
-            cout << "You deserved a Coca Cola!" << endl;
-            break;
-        case 2:
-            cout << "Ahhhh! Refreshing Sprite is coming!" << endl;
-            break;
-        case 3:
-            cout << "Enjoy your ice cold Pepsi cola!" << endl;
-            break;
-        case 4:
-            cout << "Up your day with 7UP!" << endl;
-            break;
-        case 5:
-            cout << "Do the Dew! Be refreshed with Mountain Dew" << endl;
-            break;
-        default:
-            cout << "ERROR: Please enter correct number.." << endl;
+★ If you program uses if statements instead of a switch statement, modify it to use a switch statement.
+If instead your program uses a switch statement, modify it to use if/else-if statements.
+
+★★ Modify the program so that if the user enters a choice other than 1-5 then it will output "Error. choice was not valid, here is your money back."
+*/
+
+int main(){
+
+    int bvg;
+
+    cout << "Please select your drinks: \n 1- Coca Cola \n 2 - Pepsi \n 3 - Sprite \n 4 - Mountain Dew \n 5 - 7-UP" << endl << endl;
+    cout << "Please input code:" << endl;
+    cin >> bvg;
+
+    if (bvg == 1){
+        cout << "Here is your Coca Cola!";
+    }else if (bvg == 2){
+        cout << "Your Pepsi is ready!";
+    }else if (bvg == 3){
+        cout << "Refresh with your Sprite!";
+    }else if (bvg == 4){
+        cout << "Do the dew!";
+    }else if (bvg == 5){
+        cout << "Up your drinks with 7-UP!";
+    }else{
+        cout << "Error, choice was not valid, here is your money back";
     }
-    
+
+    return 0;
+
 }
