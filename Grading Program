@@ -20,8 +20,6 @@ If the user scored a 100 then notify the user that they got a perfect score.
 c/o: http://www.cplusplus.com/forum/articles/12974/
 */
 
-
-
 int main(){
 
     int grade = 0;
